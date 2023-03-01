@@ -11,7 +11,6 @@
             height: 600px;
             width: 100%;
             background-size: cover;
-            
             background-position: center;
         }
         .image2{
@@ -20,16 +19,16 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-bs-theme="dark">
-  <div class="container-fluid ">
-    <a class="navbar-brand " href="#">Titanic</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon "></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <button class="btn btn-dark px-5 mx-3 my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Titanic</button>
+  <div class="offcanvas offcanvas-start bg-dark text-white" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Titanic</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active " aria-current="page" href="#ship">Ship</a>
+          <a class="nav-link" aria-current="page" href="#ship">Ship</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="#info">Info</a>
@@ -43,7 +42,53 @@
       </ul>
     </div>
   </div>
-</nav>
+  <button class="btn btn-dark px-5 my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Movies</button>
+  <div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="offcanvas offcanvas-end bg-dark text-white" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Other Movies</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="card mb-3" style="width: 21rem; height: 450px;">
+        <img src="rocky.png" class="card-img-top" style="height: 316px;">
+        <div class="card-body">
+          <p class="card-text text-dark">One of the greatest movie's of all times. Main actor is Slyvester Stallone</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="width: 21rem; height: 450px;">
+        <img src="creed.webp" class="card-img-top"  style="height: 316px;">
+        <div class="card-body">
+          <p class="card-text text-dark">Movie Creed is about boxing. Slyvester's heritage Creed. IT's great motivation for youngsters</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="width: 21rem; height: 450px;">
+        <img src="green.webp" class="card-img-top"  style="height: 316px;">
+        <div class="card-body">
+          <p class="card-text text-dark">One of the most emotional films ever. It's about not guilty man , who was killed not fairly.</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="width: 21rem; height: 450px;">
+        <img src="carter.jpg" class="card-img-top"  style="height: 316px;">
+        <div class="card-body">
+          <p class="card-text text-dark">Coach Carter is one of the most wise films off all times. It's about Basketball , and team play.</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="width: 21rem; height: 450px;">
+        <img src="run.jpg" class="card-img-top"  style="height: 316px;">
+        <div class="card-body">
+          <p class="card-text text-dark">It's a movie which were created on the real situation, it's about prison and the guy who avoided prison.</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="width: 21rem; height: 450px;">
+        <img src="pele.jpg" class="card-img-top"  style="height: 316px;">
+        <div class="card-body">
+          <p class="card-text text-dark">Movie Pele is one of the greatest movies off all times. It's about "born of the King of Football"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
 <div class="image image2" id="ship">
     <blockquote class="text-center pt-5 text-dark fs-3 fw-bold" ><p >April 15, 1912: 'God Himself Could Not Sink This Ship'</p> 
